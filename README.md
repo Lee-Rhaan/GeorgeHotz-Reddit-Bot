@@ -42,10 +42,25 @@ then I reverse engineered the process.
 ### It was an Incremental Process: 
 
 - Had to first figure out which Reddit API Endpoints was going to be useful for the type of Bot I was planning on creating.
+- I then decided it would be easier to communicate with the Reddit API by issuing cURL requests.
+> Here's an overview: https://developer.ibm.com/articles/what-is-curl-command/
+
+I collected all the necessary information + now had the URL's of the different Reddit API endpoints.
+
+After setting up the access token logic (because Reddit uses a token-based authentication API), I then tested out each API endpoint, trying to figure out 
+the cURL request for each endpoint.
+> and only then things started getting easier...
+
+- Once I figured out the basics, the rest of the logic just consisted of data retrieval & manipulation etc.
 
 ---
 
 ## Additional Information:
+
+### Database Script
+
+- Contained in the project directory, you'll find a db script folder, containing the database tables/layout.
+- You can just copy and paste it into your mysql command line client or workbench after populating the insert query with your Bot's own credentials.
 
 ### George Hotz Reddit Bot JAR
 
